@@ -91,11 +91,11 @@ class PaymentsModes extends Component {
             <div>
               <div className="total-count-container">
                 <p>No items:</p>
-                <p>{totalItems}</p>
+                <p className="total-items">{totalItems}</p>
               </div>
               <div className="total-count-container">
                 <p>Total Amount:</p>
-                <p>{totalAmount}</p>
+                <p className="total-amount">{totalAmount}</p>
               </div>
             </div>
             <button
