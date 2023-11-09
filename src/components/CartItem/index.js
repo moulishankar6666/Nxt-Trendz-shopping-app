@@ -36,6 +36,7 @@ const CartItem = props => (
             </div>
             <div className="cart-quantity-container">
               <button
+                aria-label="minus"
                 type="button"
                 className="quantity-controller-button"
                 data-testid="minus"
@@ -45,6 +46,7 @@ const CartItem = props => (
               </button>
               <p className="cart-quantity">{quantity}</p>
               <button
+                aria-label="plus"
                 type="button"
                 className="quantity-controller-button"
                 data-testid="plus"
@@ -65,10 +67,11 @@ const CartItem = props => (
             </div>
           </div>
           <button
+            aria-label="remove"
+            data-testid="remove"
             className="delete-button"
             type="button"
             onClick={onRemoveCartItem}
-            data-testid="remove"
           >
             <AiFillCloseCircle color="#616E7C" size={20} />
           </button>
