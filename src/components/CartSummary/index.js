@@ -15,7 +15,6 @@ const CartSummary = () => (
       })
 
       return (
-        <>
           <div className="cart-summary-container">
             <h1 className="order-total-value">
               <span className="order-total-label">Order Total:</span> Rs {total}
@@ -39,23 +38,6 @@ const CartSummary = () => (
               )}
             </Popup>
           </div>
-          <Popup
-            modal
-            trigger={
-              <button type="button" className="checkout-button d-lg-none">
-                Checkout
-              </button>
-            }
-          >
-            {close => (
-              <PaymentModes
-                totalItems={cartList.length}
-                totalAmount={total}
-                close={close}
-              />
-            )}
-          </Popup>
-        </>
       )
     }}
   </CartContext.Consumer>
